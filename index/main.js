@@ -214,7 +214,6 @@ function restore() {
             })
         });
 
-
         //for (let i = 0; i < (click_list.length); i++) {
             console.log(click_list)
             if ((click_list[6] != null) && (click_list[6] > 0)) {
