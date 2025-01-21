@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Stage Fright : Empty Framework</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/index/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N5FF9PFPY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4N5FF9PFPY');
+    </script>
+        
+    <body>
+        <header>
+            <nav id="mySidenav" class="sidenav">
+                <div id="nav-placeholder"></div>
+                    <script>
+                        $(function(){
+                        $("#nav-placeholder").load("/index/nav.html");
+                        });
+                    </script>
+                <span class="nav_open" onclick="openNav()">&#9776;</span>
+            </nav>    
+        </header>
+
+        <div class="loading-placeholder" id="loading-placeholder"></div>
+        <script>
+            $(function(){
+            $("#loading-placeholder").load("/index/loading.html");
+            });
+        </script>
+
+
+        <h1>Heading</h1>
+        <p>Paragraph</p>
+
+        
+        <div class="footer-placeholder" id="footer-placeholder"></div>
+            <script>
+                $(function(){
+                $("#footer-placeholder").load("/index/footer.html");
+                });
+            </script>
+
+        <div id="sns-placeholder"></div>
+            <script>
+                $(function(){
+                $("#sns-placeholder").load("/index/sns_bar.html");
+                });
+            </script>
+        
+        <script src="/index/main.js"></script>
+    </body>
+</html>
