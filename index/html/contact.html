@@ -4,10 +4,18 @@
         <title>Stage Fright : Contact</title>
         <link rel="icon" type="image/x-icon" href="/Assets/Favicon.png">
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/index/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/index/css/main.css">
+        <link rel="stylesheet" href="/index/css/contact.css">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N5FF9PFPY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4N5FF9PFPY');
+    </script>
 
     <body>
         <header>
@@ -15,7 +23,7 @@
                 <div id="nav-placeholder"></div>
                 <script>
                     $(function(){
-                    $("#nav-placeholder").load("/index/nav.html");
+                    $("#nav-placeholder").load("/index/html/nav.html");
                     });
                 </script>
                 <span class="nav_open" onclick="openNav()">&#9776;</span>
@@ -25,63 +33,51 @@
         <div class="loading-placeholder" id="loading-placeholder"></div>
         <script>
             $(function(){
-            $("#loading-placeholder").load("/index/loading.html");
+            $("#loading-placeholder").load("/index/html/loading.html");
             });
-        </script>
-   
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N5FF9PFPY"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', 'G-4N5FF9PFPY');
         </script>
          
         <h1>Contact</h1>
 
         <div class="Data">
-        
-        <ul style="padding-left:0%;">
-            <li><b>Email:</b></li>
-                <li>general@stagefright.com</li>
-                <br>
-            <li><b>Phone:</b></li>
-                <li>+1 (254) - 909 - 6006</li>
-                <br>
-            <li><b>Address:</b></li>
-                <li>8200 Mars Dr. <br>Waco, TX</li>
-                <br>
-        </ul>
-        <ul style="padding-left:0%;">
-            <li><b>Customer Service:</b></li>
-                <li>help@stagefright.com</li>
-                <br>
-            <li><b>Booking:</b></li>
-                <li>booking@stagefright.com</li>
-                <br>
-            <li><b>Say Hello: </b></li>
-                <li>hello@stagefright.com</li>
-                <br>
-        </ul>
-    </div>
+            <ul style="padding-left:0%;">
+                <li><b>Email:</b></li>
+                    <li>general@stagefright.com</li>
+                    <br>
+                <li><b>Phone:</b></li>
+                    <li>+1 (254) - 909 - 6006</li>
+                    <br>
+                <li><b>Address:</b></li>
+                    <li>8200 Mars Dr. <br>Waco, TX</li>
+                    <br>
+            </ul>
+            <ul style="padding-left:0%;">
+                <li><b>Customer Service:</b></li>
+                    <li>help@stagefright.com</li>
+                    <br>
+                <li><b>Booking:</b></li>
+                    <li>booking@stagefright.com</li>
+                    <br>
+                <li><b>Say Hello: </b></li>
+                    <li>hello@stagefright.com</li>
+                    <br>
+            </ul>
+        </div>
 
         <div class="footer-placeholder" id="footer-placeholder"></div>
-            <script>
-                $(function(){
-                $("#footer-placeholder").load("/index/footer.html");
-                });
-            </script>
-        </div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("/index/html/footer.html");
+            });
+        </script>
         
         <div class="sns-placeholder" id="sns-placeholder"></div>
         <script>
             $(function(){
-            $("#sns-placeholder").load("/index/sns_bar.html");
+            $("#sns-placeholder").load("/index/html/sns_bar.html");
             });
         </script>
-        </div>
 
-        <script src="/index/main.js"></script>
+        <script src="/index/js/main.js"></script>
     </body>
 </html>

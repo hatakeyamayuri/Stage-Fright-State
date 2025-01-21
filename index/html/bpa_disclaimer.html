@@ -3,19 +3,18 @@
     <head>
         <title>BPA Info: Web Design Team (435)</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/index/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/index/css/main.css">
+        <link rel="stylesheet" href="/index/css/bpa_disclaimer.css">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <link rel="icon" type="image/x-icon" href="/Assets/Ducko.png">
     </head>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4N5FF9PFPY"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-4N5FF9PFPY');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4N5FF9PFPY');
     </script>
 
     <body>
@@ -24,7 +23,7 @@
                 <div id="nav-placeholder"></div>
                 <script>
                     $(function(){
-                    $("#nav-placeholder").load("/index/bpa_nav.html");
+                    $("#nav-placeholder").load("/index/html/bpa_nav.html");
                     });
                 </script>
                 <span class="nav_open" onclick="openNav()">&#9776;</span>
@@ -34,7 +33,7 @@
         <div class="loading-placeholder" id="loading-placeholder"></div>
         <script>
             $(function(){
-            $("#loading-placeholder").load("/index/loading.html");
+            $("#loading-placeholder").load("/index/html/loading.html");
             });
         </script>
         
@@ -43,7 +42,6 @@
 
         <h3 class="Foundation" style="font-family:Century Gothic;"><b>Founded: </b>September 16, 2024 by Yuri H. & Grace R.</h3>
             
-
         <ul class ="Information" style="font-family:Century Gothic;">
             <li><b>Chapter: </b>Midway High (02-1011) </li>
             <li><b>Team Members: </b>Grace Rodriguez & Yuri Hatakeyama</li>
@@ -71,12 +69,12 @@
         </p>
         
         <div class="footer-placeholder" id="footer-placeholder"></div>
-            <script>
-                $(function(){
-                $("#footer-placeholder").load("/index/footer.html");
-                });
-            </script>
-        </div>
-        <script src="/index/main.js"></script>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("/index/html/footer.html");
+            });
+        </script>
+
+        <script src="/index/js/main.js"></script>
     </body>
 </html>
