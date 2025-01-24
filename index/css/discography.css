@@ -7,12 +7,9 @@
     margin-bottom: 2%;
 }
   
-.disco_rotateImage_1 {
+.disco_rotateImage {
     animation: rotation 30s infinite linear;
-}
-  
-.disco_rotateImage_2 {
-    animation: rotation 30s infinite linear;
+    width:10%
 }
   
 @keyframes rotation {

@@ -26,7 +26,7 @@
   
   /* Add a background color on mouse-over */
 .List a:hover {
-    background: linear-gradient(0deg,#ff18749d, #6f334194);
+    background: linear-gradient(0deg,#e9a4c0, #dc6f88);
     color:rgb(0, 0, 0);
 }
   
