@@ -100,7 +100,7 @@
   .close:focus {
     color: #999;
     text-decoration: none;
-    cursor: url(https://raw.githubusercontent.com/Lisiman/lisiman.github.io/6fa20ed1e50c83a346663ac6a59f3dbfd9301b31/resources/ZEN-Cursor4.svg), default !important;
+    cursor: pointer;
   }
   
   .mySlides {
@@ -108,13 +108,13 @@
   }
   
   .cursor {
-    cursor: url(https://raw.githubusercontent.com/Lisiman/lisiman.github.io/6fa20ed1e50c83a346663ac6a59f3dbfd9301b31/resources/ZEN-Cursor4.svg), default !important;
+    cursor: pointer;
   }
   
   /* Next & previous buttons */
   .prev,
   .next {
-    cursor: url(https://raw.githubusercontent.com/Lisiman/lisiman.github.io/6fa20ed1e50c83a346663ac6a59f3dbfd9301b31/resources/ZEN-Cursor4.svg), default !important;
+    cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;

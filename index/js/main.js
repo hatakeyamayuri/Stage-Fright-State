@@ -1,12 +1,24 @@
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
-    document.getElementById("nav_sns_menu").style.display = "block";
+    ///document.getElementById("nav_sns_menu").style.display = "grid";
     document.getElementById("copyright1").style.display = "block";
+    var coll = document.getElementsByClassName("BlackLogos");
+    for(var i=0, len=coll.length; i<len; i++)
+    {
+        coll[i].style["color"] = "rgb(255, 255, 255)";
+        coll[i].style.zIndex = "50";
+    }
 }
 function closeNav() {
     document.getElementById("myNav").style.height = "0%";
-    document.getElementById("nav_sns_menu").style.display = "none";
+    //document.getElementById("nav_sns_menu").style.display = "none";
     document.getElementById("copyright1").style.display = "none";
+    var coll = document.getElementsByClassName("BlackLogos");
+    for(var i=0, len=coll.length; i<len; i++)
+    {
+        coll[i].style["color"] = "rgb(0, 0, 0)";
+        coll[i].style["z-index"] = "12";
+    }
 }
 
 function openExitRight() {

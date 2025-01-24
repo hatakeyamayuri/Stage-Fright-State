@@ -1,0 +1,348 @@
+/* discography individual */
+
+.hero-image {
+    position: relative;
+    margin-top: 6.5%;
+    padding-top:.2%;
+    margin-bottom: 2%;
+}
+  
+.disco_rotateImage_1 {
+    animation: rotation 30s infinite linear;
+}
+  
+.disco_rotateImage_2 {
+    animation: rotation 30s infinite linear;
+}
+  
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(0, 0, 0, 0);
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 120px;
+    padding-bottom: 5px;
+}
+
+.column {
+    padding: 0 20px;
+    padding-bottom: 10px;
+}
+
+/*Exit Right Album*/
+
+
+.open_ET {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+  
+.open_ET_img {
+    width: 500px;
+    height: 500px;
+}
+  
+.open_ET_description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: #ff1875;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 80px;
+    text-align:center;
+    text-shadow: 3px 5px #6f3341;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+  
+.open_ET:hover .open_ET_description {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.myExitRight{
+    display: none;
+}
+  
+.myExitRight img{
+    height: 300%;
+    width: 300%;
+}
+
+/*Conquer*/
+
+.open_Conquer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+  
+.open_Conquer_img {
+    width: 500px;
+    height: 500px;
+}
+  
+.open_Conquer_description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: #ff1875;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 80px;
+    text-align:center;
+    text-shadow: 3px 5px #6f3341;
+  
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+.open_Conquer:hover .open_Conquer_description {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.myConquer{
+    display: none;
+}
+  
+.myConquer img{
+    height: 300px;
+    width: 300px;
+}
+
+/*Butterflies*/
+
+
+.open_B {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+  
+.open_B_img {
+    width: 500px;
+    height: 500px;
+}
+  
+.open_B_description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: #ff1875;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 80px;
+    text-align:center;
+    text-shadow: 3px 5px #6f3341;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+  
+.open_B:hover .open_B_description {
+    visibility: visible;
+    opacity: 1;
+}
+  
+.myButterflies{
+    display: none;
+}
+  
+.myButterflies img{
+    height: 300px;
+    width: 300px;
+}
+
+
+/* pop-up */
+.overlay_trans_box {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.712); /* Black background with opacity */
+    z-index: 13; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+
+div.sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 1.2%;
+    font-size: 200%;
+    position: absolute;
+    width: 70%;
+    height: 115%;
+    top: 50%;
+    left: 50%;
+    font-size: 300%;
+    z-index: 14;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    margin-top: 8%;
+}
+
+
+/*.overlay_solid_box {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+div.sticky {
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}*/
+
+
+/*The Overlay of Albums*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+  
+.ExitRight1 img {
+    float: right;
+    margin: 0px 0px 15px 20px;
+    width: 48%;
+    height:48%;
+}
+  
+.exit {
+    font-size:60px;
+    text-align:left;
+    margin-bottom:1%;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-bottom: none;
+}
+  
+.TwentyFour {
+    font-size: 40px;
+    margin-bottom:3%;
+    margin-top:none;
+    text-align: left;
+    margin-left: 40px;
+    padding-top: none;
+}
+.Songs{
+    font-size:50%;
+    margin-bottom:.1%;
+    margin-top:none;
+    text-align: left;
+    margin-left: 40px;
+    padding-top: none;
+}
+  
+.Buyo {
+    height:3%;
+}
+  
+  
+.Buyo tr:hover {background-color: #00000000;} 
+  
+  
+.Buy{
+    font-size:82%;
+    margin-bottom:1%;
+    margin-top:.1%;
+    text-align: left;
+    margin-left: 40px;
+    padding-top: none;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav_list {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #ff1875;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    font-size: 55px;
+}
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+}

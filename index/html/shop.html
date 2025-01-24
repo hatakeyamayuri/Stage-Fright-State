@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/index/css/main.css">
         <link rel="stylesheet" href="/index/css/shop.css">
-        <script src="https://kit.fontawesome.com/7ebee20530.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 
@@ -57,7 +57,12 @@
                 <button onclick="clearCart()" class="ClearingCart" id="clear_button" style="font-weight:bold; background: rgba(255, 255, 255, 0); color:white; font-size:110%; display:inline-block; margin-left:36%; margin-top:0%;">Clear Cart</button>
             </div>
         </div>
-        <img class="cart_open" onclick="openCart()" src="/Assets/basket_icon.png"></img>
+        <span class="cart_open" onclick="openCart()">
+            <span class="fa-stack fa-2x">
+                <i class="fa-solid fa-circle fa-stack-2x"></i>
+                <i class="fa-solid fa-bag-shopping fa-stack-1x fa-inverse"></i>
+            </span>
+        </span>
 
         <div class="container_shop v3">
             <div class="cards">

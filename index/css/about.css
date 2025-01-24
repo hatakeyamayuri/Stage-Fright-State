@@ -423,6 +423,7 @@
 }
 
 
+
 #gallery-text-left{
     /* Added */
     width: 50%;
@@ -591,4 +592,28 @@
     .right {
     left: 0%;
     }
+  }
+
+/*About Page*/
+.AllAbout {
+    text-align:left;
+    float:center;
+    position:center;
+    padding:30px;
+    margin-left:120px;
+    width:600px;
+    text-indent:40px;
+    line-height: 2;
+  }
+  
+  .rows{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5 4px;
+  }
+  .column1 {
+    flex: 25%
+  }
+  .column2{
+    flex: 50%;
   }

@@ -65,6 +65,11 @@
     z-index: 5;
 }
 
+
+.NameLogo img {
+    z-index: auto;
+}
+
 .subheading {
     position: relative;
     z-index: auto;
@@ -95,7 +100,7 @@
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 30px;
-    width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    width: 22.89%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     z-index: 100;
     text-align: center; /* If you want the text to be centered */
 }
@@ -296,6 +301,28 @@
 }
 
 
+.cards img{
+    width: calc(9vw + 9vh);
+}
+  
+.cards btn{
+    margin-left:0%;
+}
+  
+.card button{
+    display:flex;
+    padding: 10px 20px;
+    font-size: 70%;
+    color:rgb(255, 255, 255);
+    gap: 10px;
+    border:2px;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff1875, #6f3341);
+    margin-left: 31%;
+    margin-top: 3%;
+}
+  
+
 /*Contact Section*/
 
 .CallTime {
@@ -311,25 +338,25 @@
     align-items:center;
     justify-content: space-evenly;
     position: relative;
-  }
+}
   
-  .contact-left{
+.contact-left{
     display:flex;
     flex-direction: column;
     align-items: start;
     gap:20px;
-  }
+}
   
-  .contact-left-title hr{
+.contact-left-title hr{
     border:none;
     width: 120px;
     height:5px;
     background-color: #6f3341;
     border-radius: 10px;
     margin-bottom:3%;
-  }
+}
   
-  .contact-inputs{
+.contact-inputs{
     width:400px;
     height:50px;
     outline: none;
@@ -338,23 +365,23 @@
     color:#6f3341;
     border-radius:2%;
     border: 1px solid #ccc;
-  }
+}
   
-  .contact-left textarea{
+.contact-left textarea{
     height:140px;
     padding-top:15px;
     border-radius:20px;
-  }
+}
   
-  .contact-input:focus{
+.contact-input:focus{
     border:2px solid #6f3341;
-  }
+}
   
-  .contact-inputs::placeholders{
+.contact-inputs::placeholders{
     color:#ae003d;
-  }
+}
   
-  .contact-left button{
+.contact-left button{
     display:flex;
     padding: 15px 30px;
     font-size: 16px;
@@ -363,17 +390,35 @@
     border:none;
     border-radius: 50px;
     background: linear-gradient(270deg,#ff1875, #6f3341);
-  }
+}
   
-  .contact-right{
+.contact-right{
     width:20%;
-  }
+}
   
-  .contact-right img{
+.contact-right img{
     width: 120%;
     height: 120%;
-  }
+}
   
-  .RoundRound{
+.RoundRound{
     animation: rotation 30s infinite linear;
-  }
+}
+
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}
+}
+
+@media (max-width:800px) {
+.contact-inputs{
+    width:80vw;
+}
+.contact-right{
+    display:none;
+}
+}

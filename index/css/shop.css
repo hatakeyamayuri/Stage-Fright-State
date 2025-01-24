@@ -7,3 +7,198 @@
     margin-bottom: 1%;
 }
 
+
+/* Navigation links */
+.List a {
+    float: left;
+    position: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+    width: 22.89%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    z-index: 100;
+    text-align: center; /* If you want the text to be centered */
+}
+  
+  /* Add a background color on mouse-over */
+.List a:hover {
+    background: linear-gradient(0deg,#ff18749d, #6f334194);
+    color:rgb(0, 0, 0);
+}
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .List a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+.shopping_cart {
+    width: 0%;
+    display: none;
+}
+
+.full_trans {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.shop_cart {
+    height: 100%;
+    width: 40%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ae003d;
+    z-index: 15;
+    box-shadow: 3px 3px 15px rgb(104, 104, 104);
+    overflow-y: scroll;
+}
+
+._Bongo{
+    margin-top:10%;
+    font-size: calc(2.5vw + 2.5vh);
+    text-transform: uppercase; 
+    font-family: 'druk_cond_trialsuper', sans-serif; 
+    letter-spacing: 8px; color:white;
+}
+
+.CKO{
+    display:flex;
+    padding: 10px 20px;
+    color:rgb(0, 0, 0);
+    gap: 10px;
+    border:2px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    margin-left: 3%;
+    margin-top: 2%;
+}
+  
+.cko button{
+    display:flex;
+    padding: 10px 20px;
+    font-size: 110%;
+    font-weight: bolder;
+    color:rgb(0, 0, 0);
+    gap: 10px;
+    border:2px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    margin-left: 3%;
+    margin-top: 2%;
+}
+
+.ClearingCart button{
+    font-weight:bold;
+    background: rgba(255, 255, 255, 0);
+    color:white;
+    font-size:110%;
+    display:inline-block;
+    margin-left:1%;
+    margin-top:0%;
+    padding: 10px 20px;
+    gap: 10px;
+    border:2px;
+    border-radius: 50px;
+}
+
+
+.cart_open {
+    position: fixed;
+    width: 4%;
+    bottom: 5%;
+    right: 2%;
+    color: #f34f76;
+}
+
+.container_shop {
+    width: 500px;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+  
+.v3 {
+    width:100%;
+}
+
+.cards {
+    display: inline-block;
+    padding: 1% 0%;
+    text-align:center;
+    width: 110%;
+    margin-left:28%;
+}
+
+
+.holder {
+    width: 500px;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+  
+.v2 {
+    width: 100%;
+}
+  
+.child {
+    display: inline-block;
+    padding: 1% 0%;
+    text-align:center;
+    width:90%;
+}
+
+.card {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.add_onshop {
+    cursor: pointer;
+}
+
+
+.cards img{
+    width: calc(9vw + 9vh);
+}
+  
+.cards btn{
+    margin-left:0%;
+}
+  
+.card button{
+    display:flex;
+    padding: 10px 20px;
+    font-size: 70%;
+    color:rgb(255, 255, 255);
+    gap: 10px;
+    border:2px;
+    border-radius: 50px;
+    background-color:#6f3341;
+    margin-left: 31%;
+    margin-top: 3%;
+}
+  
+
+.add_sub button{
+    font-size: 200%;
+    margin-left: 1%;
+}
