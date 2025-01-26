@@ -1,0 +1,103 @@
+Options +FollowSymLinks<br />
+RewriteEngine On
+```<br />
+<br />
+This is the base for all the coding that will follow. In some cases, like old versions of Apache, the first line might cause server problems. To comment it out, just add a '#' at the beginning of the line.<br />
+<br />
+[b]Custom Error Pages[/b]<br />
+<br />
+No more stupid error pages... With this code you will be able to make error pages that match the look 'n feel of your website. To do so, just add this code:<br />
+<br />
+```php
+ErrorDocument 403 /403.php<br />
+ErrorDocument 404 /404.php
+```<br />
+<br />
+Note: If you are going to make custom error pages, you won't want to have them indexed. So you will want to add these 2 meta tags to keep the page from being indexed.<br />
+<br />
+```php
+<meta name="robots" content="noindex, follow" /> <br />
+<meta name="GOOGLEBOT" content="noindex, follow" />
+```<br />
+<br />
+[b]Blocking Access to Files[/b]<br />
+<br />
+Sometimes, well many times actually it is a good idea to block access to certain files. Like config, or installation files. It is very easy to do. Use this code: <br />
+<br />
+```php
+<Files filename.extention><br />
+order allow,deny<br />
+deny from all<br />
+</Files>
+```<br />
+<br />
+Or if you would like to block access to a specific file type, add this code:<br />
+<br />
+```php
+<Files *.extention> <br />
+order allow,deny<br />
+deny from all<br />
+</Files>
+```<br />
+<br />
+[b]Make Your Site Only Accessible With WWW[/b]<br />
+<br />
+This is most usefull for e-commerce sites, because when you install a SSL it is only valid for the version of the domain it was issued to IE either the www, or the non-www version. But it is good for all websites to avoid double indexing, and therefore killing the SEO of that page. To make your website only accessible with WWW, use this code: <br />
+<br />
+```php
+RewriteCond %{HTTP_HOST} !^www\.website\.com [NC]<br />
+RewriteRule ^(.*)$ http://www.website.com/$1 [L,R=301]<br />
+RewriteRule ^$ http://www.website.com/index.php [L,R=301]
+```<br />
+<br />
+Note: People can still access your website by typing in website.com, but it will just rewrite (redirect) them to [url=http://www.website.com/index.php]http://www.website.com/index.php[/url] and will always force the WWW in the URL. You can also of course, change 'index.php' to suit your needs.<br />
+<br />
+[b]For Web Designers[/b]<br />
+<br />
+This one is for all of the web designers here... With this code, you can make your JS, CSS files and images inaccessible. And if you were paying attention to the first part of this tutorial and made custom error pages, it will take them to the 403 (access restricted) page you made. Heres the code: <br />
+<br />
+```php
+RewriteCond %{HTTP_REFERER} !^http://website.com/.*$	  [NC]<br />
+RewriteCond %{HTTP_REFERER} !^http://website.com$	  [NC]<br />
+RewriteCond %{HTTP_REFERER} !^http://www.website.com/.*$	  [NC]<br />
+RewriteCond %{HTTP_REFERER} !^http://www.website.com$	  [NC] <br />
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp|css|js)$ http://www.website.com/403.php [R=301,NC,L]
+```<br />
+<br />
+Note: This code fully protects your JS and images in all browsers. But it does not protect your CSS in IE and Opera. I am still working on getting this fixed, hopefully I can fix it soon. The problem is that when CSS is accessed, it doesn't really have a http referer. It is just sort of downloaded, without really accessing the page. I know that sounds weird, but that is what it does. <br />
+<br />
+[b]Moving? No Problem![/b]<br />
+<br />
+Whenever you need to move a page, or website to a differen't domain it can be quite annoying. Mostly because of lost visitors getting 404 errors, because the page does not exist. But no more! If you are moving, or renaming a page or even a domain just use this code: <br />
+<br />
+```php
+Redirect 301 /olddirectory/oldfile.html http://yoursite.com/newdirectory/newfile.html
+```<br />
+<br />
+And if you would like to redirect all requests to  domain add this code:<br />
+<br />
+```php
+Redirect 301 / http://www.newsite.com/
+```<br />
+<br />
+There are several advantages to doing your redirects this way. The most important would probably have to be the fact that when Google or Yahoo and other search engines come and crawl your site, and access the page you are redirecting, your server will send a 301 command (moved permanently), and in doing so the new page will enherent all of the pagerank of the previous page. Which you won't get just redirecting with a header_location with PHP. Not to mention the fact that depending on how that is done, search engines may read it as you spamming. Another advantage to doing this is you will save bandwith, because the redirect is done on the server side, and users won't be loading a useless redirect page. <br />
+<br />
+[b]Rewrite Those Darned Dynamic URLs![/b]<br />
+<br />
+For this example I am using the tutorials page. This is probably one of the most important elements of SEO, because search engines hate dynamic websites. Well, not really the website, but the dynamic URLs. Like in the tutorials, [url=http://www.tutorialfx.com/view_tutorial.php?id=133]http://www.tutorialfx.com/view_tutorial.php?id=133[/url]. This is not a worst case scenario, I have seen some URLs with 5 or 6 query strings. But none the less, it is best to have none at all. Use this code to fix them: <br />
+<br />
+```php
+RewriteRule tutorial-(.*)\.html$ view_tutorial.php?id=$1
+```<br />
+<br />
+With this code, it will rewrite all of the tutorials on TutorialFX to a nice, SE friendly URL like so:<br />
+<br />
+```php
+http://www.tutorialfx.com/tutorial-133.html
+```<br />
+<br />
+This will not only improve the rankings of the page, but accessibility as well. One thing I changed also, is I took out the '_' in the URL. I did this, because if you separate words with underscores instead of dashes, SE read them as 2 separate 'phrases'. So you will only get a keyword benefit for 'word1' and 'word2' separately if you use underscores. But if you use dashes, you will receive a keyword bonus for a search for 'word1', 'word2' and a search for 'word1 word2'. In this case it does not give much advantage, but there are other cases that it will be of great use, which is why I pointed it out. <br />
+<br />
+P.S. Ghost, if you would like to rewrite the tutorials on this site with this code, feel free to do so. I don't know how you have them setup, as in if they are DB driven or not, but if you want to replace the dynamic URLS, without having to hack into your code... You can use preg_replace, to automatically change your URLs to the SEO static pages. If you need some help adapting preg_replace, I can help you with that. But I would have to see the source of the tutorials script... I don't know if you would have a problem with that or not... But let me know.<br />
+<br />
+[b]Stay tuned! More to come![/b]
