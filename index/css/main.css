@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: Arial, sans-serif;
   height: 90%;
   margin: 0px;
   padding-bottom:4px;
@@ -13,13 +13,22 @@ Main {
   unicode-bidi: isolate;
 }
 
-/*Font*/
 @font-face {
   font-family: 'druk_cond_trialsuper';
   src: url('/Assets/Druk_Collection/Druk_Condensed_Family/DrukCond-Super-Trial.otf') format('woff2'),
        url('/Assets/Druk_Collection/Druk_Condensed_Family/DrukCond-Super-Trial.otf') format('woff');
 }
- 
+
+h1 {
+  color: #000000;
+  text-align: center;
+  margin-top: none;
+  line-height: 1.4;
+  margin-bottom: none;
+  font-size: calc(6vw + 6vh);
+  text-transform: uppercase;
+  font-family: 'druk_cond_trialsuper', sans-serif;
+}
 
 /*Header*/
 .FinaleName img {
@@ -38,17 +47,7 @@ div.sticky {
   font-size: 20px;
 }
 
-  h1 {
-    color: #000000;
-    text-align: center;
-    margin-top: none;
-    line-height: 1.4;
-    margin-bottom: none;
-    font-size: calc(6vw + 6vh);
-    text-transform: uppercase;
-    font-family: 'druk_cond_trialsuper', sans-serif;
-    letter-spacing: 20px;
-  }
+  
 
   header{
     margin-bottom:none;
@@ -284,7 +283,6 @@ h4{
 }
 
 .hero-image3 {
-  /*background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../Assets/Pictures/ShopHeader.png");*/
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;

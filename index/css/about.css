@@ -604,16 +604,17 @@
     width:600px;
     text-indent:40px;
     line-height: 2;
-  }
+}
   
-  .rows{
+.rows{
     display: flex;
     flex-wrap: wrap;
     padding: 5 4px;
-  }
-  .column1 {
+}
+.column1 {
     flex: 25%
-  }
-  .column2{
+}
+.column2{
     flex: 50%;
-  }
+}
+

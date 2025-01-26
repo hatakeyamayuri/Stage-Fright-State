@@ -21,24 +21,40 @@ function closeNav() {
     }
 }
 
+function allOpenAlbums() {
+    document.querySelector('html').style.overflowY = "hidden";
+}
+function allCloseAlbums() {
+    document.querySelector('html').style.overflowY = "scroll";
+}
+
 function openExitRight() {
-    document.getElementById("myExitRight").style.display = "block";
+    allOpenAlbums()
+    document.getElementById("myExitRight").style.display = "grid";
+    document.getElementById("overlay_ExitRight").style.overflowY = "scroll";
 }
 function closeExitRight() {
+    allCloseAlbums()
     document.getElementById("myExitRight").style.display = "none";
 }
 
 function openConquer() {
-    document.getElementById("myConquer").style.display = "block";
+    allOpenAlbums()
+    document.getElementById("myConquer").style.display = "grid";
+    document.getElementById("overlay_Conquer").style.overflowY = "scroll";
 }
 function closeConquer() {
+    allCloseAlbums()
     document.getElementById("myConquer").style.display = "none";
 }
 
 function openButterflies() {
-    document.getElementById("myButterflies").style.display = "block";
+    allOpenAlbums()
+    document.getElementById("myButterflies").style.display = "grid";
+    document.getElementById("overlay_Butterflies").style.overflowY = "scroll";
 }
 function closeButterflies() {
+    allCloseAlbums()
     document.getElementById("myButterflies").style.display = "none";
 }
 
@@ -766,3 +782,4 @@ product.addEventListener('change', function(evt) {
         power.appendChild(opts[val][i]);
     }
 });
+
