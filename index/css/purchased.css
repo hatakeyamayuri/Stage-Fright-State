@@ -17,6 +17,17 @@
 .Arrival2 {
     text-align:center;
     font-size:30px;
-    margin-bottom:120px; 
+    margin-bottom:50px; 
     font-family: century-gothic, sans-serif;
+}
+
+.Return{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.Return:hover{
+    color: #6f3341;
+    text-decoration: underline;
+    cursor: pointer;
 }

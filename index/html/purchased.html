@@ -20,15 +20,13 @@
     
     <body>
         <header>
-            <nav id="mySidenav" class="sidenav">
-                <div id="nav-placeholder"></div>
-                <script>
-                    $(function(){
-                    $("#nav-placeholder").load("/index/html/nav.html");
-                    });
-                </script>
-                <span class="nav_open" onclick="openNav()">&#9776;</span>
-            </nav>    
+            <div id="nav-placeholder"></div>
+            <script>
+                $(function(){
+                $("#nav-placeholder").load("/index/html/nav.html");
+                });
+            </script>
+            <span class="nav_open" onclick="openNav()">&#9776;</span> 
         </header>
 
         <div class="loading-placeholder" id="loading-placeholder"></div>
@@ -42,6 +40,7 @@
         <h2 class="Order">Your Order has been Recieved</h2>
         <h4 class="Arrival">Within the US: Should arrive in 2-3 Business Weeks</h4>
         <h4 class="Arrival2">International: Should arrive in 3-4 Business Weeks</h4>
+        <h4 class="Return" onclick="window.location.href='/index/html/shop.html';">Return to Shop</h4>
         
         <div class="footer-placeholder" id="footer-placeholder"></div>
         <script>

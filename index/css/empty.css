@@ -1,0 +1,501 @@
+.List{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.List a {
+    position: center;
+    padding: 1%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: x-large;
+    width: 22.89%; 
+    z-index: 1;
+    text-align: center; 
+    text-transform: uppercase;
+    border-radius: .5rem;
+    font-family: Lato, sans-serif;
+}
+.List a:hover {
+    background: linear-gradient(0deg,#e9a4c0, #dc6f88);
+    color:white;
+}
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+    .List a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+}
+
+.section-p1 {
+  padding: 40px 80px;
+  font-family: Lato, sans-serif;
+}
+
+#product1 p {
+    Font-size: 16px;
+    Color: #465b52;
+    Margin: 15px 0 20px 0;
+}
+
+._Bongo{
+  margin-top:8%;
+  font-size: calc(2.5vw + 2.5vh);
+  text-transform: uppercase; 
+  font-family: 'druk_cond_trialsuper', sans-serif; 
+  letter-spacing: 8px; color:white;
+}
+
+.CKO{
+  display:flex;
+  padding: 10px 20px;
+  color:rgb(0, 0, 0);
+  gap: 10px;
+  border:2px;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  margin-left: 3%;
+  margin-top: 2%;
+  cursor: url(https://raw.githubusercontent.com/Lisiman/lisiman.github.io/6fa20ed1e50c83a346663ac6a59f3dbfd9301b31/resources/ZEN-Cursor4.svg), default !important;
+}
+
+.cko button{
+  display:flex;
+  padding: 10px 20px;
+  font-size: 110%;
+  font-weight: bolder;
+  color:rgb(0, 0, 0);
+  gap: 10px;
+  border:2px;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  margin-left: 3%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.ClearingCart button{
+  font-weight:bold;
+  background: rgba(255, 255, 255, 0);
+  color:white;
+  font-size:110%;
+  display:inline-block;
+  margin-left:1%;
+  margin-top:0%;
+  padding: 10px 20px;
+  gap: 10px;
+  border:2px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.add_sub button{
+  font-size: 200%;
+  margin-left: 1%;
+  cursor:pointer;
+}
+
+
+
+
+
+
+.shop_cart {
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ae003d;
+  z-index: 15;
+  box-shadow: 3px 3px 15px rgb(104, 104, 104);
+  overflow-y: scroll;
+}
+
+
+
+
+
+.shopping_cart {
+  width: 0%;
+  display: none;
+}
+
+.cart_open {
+  position: fixed;
+  width: 4%;
+  bottom: 5%;
+  right: 2%;
+}
+
+.full_trans {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+}
+
+#product1 .cards {
+  Display: flex;
+  Justify-content: space-between;
+  Padding-top: 20px;
+  Flex-wrap: wrap;
+}
+
+#product1 .card {
+  Width: 23%;
+  Min-width: 250px;
+  Padding: 10px 12px;
+  Border: 1px solid #e7ccdf;
+  Border-radius: 25px;
+  Cursor: pointer;
+  Box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  Margin: 15px 0;
+  Transition: 0.2s ease;
+  Position: relative;
+}
+
+
+#product1 .card img {
+  Width: 100%;
+  Border-radius: 20px;
+}
+
+#product1 .card img:hover {
+  Box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .card .des {
+  Text-align: start;
+  Padding: 10px 0;
+}
+#product1 .card .des span {
+  Color: #ff1875;
+  Font-size: 12px;
+  font-family: Lato, sans-serif;
+}
+
+#product1 .card .des h4 {
+  Padding-top: 7px;
+  Color: #1a1a1a;
+  Font-size: 16px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-family: Lato, sans-serif;
+}
+
+#product1 .card .des .price {
+  color: #6f3341;
+  Font-size: 15px;
+}
+
+#product1 .card .des p {
+  Padding-top: 7px;
+  Font-size: 15px;
+  Font-weight: 700;
+  Color: #6f3341;
+  margin-top: 1%;
+}
+
+#product1 .card button {
+  Width: 40px;
+  Height: 40px;
+  Line-height: 40px;
+  Border-radius: 50px;
+  Background-color: #f6e8f1;
+  Font-weight: 500;
+  Color: #6f3341;
+  Border: 1px solid #e7ccdf;
+  Position: absolute;
+  Bottom: 20px;
+  Right: 10px;
+}
+
+@media (max-width:799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+  #product1 .cards{
+    justify-content: center;
+  }
+  #product .card{
+    margin: 15px;
+  }
+}
+
+
+
+
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #6f3341;
+  color: white;
+  padding: 12px;
+  margin: 20px;
+  border: none;
+  width: 95%;
+  border-radius: 3px;
+  cursor: url(https://raw.githubusercontent.com/Lisiman/lisiman.github.io/6fa20ed1e50c83a346663ac6a59f3dbfd9301b31/resources/ZEN-Cursor4.svg), default !important;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #ff1875;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+
+.extra_content_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  width:100%;
+}
+
+.ExitRight24 {
+  max-width: 65%;
+}
+
+.ExitRight24 img {
+  max-width: 60%;
+  max-height: 60%;
+  margin-left: 7.5%;
+  display:flex;
+}
+
+.album_main {
+  font-size: calc(6vw + 6vh);
+  padding-left: .01%;
+  margin-right: 7%;
+  font-family: 'druk_cond_trialsuper', sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  line-height: 1.4;
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product{
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.product-category{
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+.product-container{
+  padding: .1vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  grid-auto-rows: 1fr;
+  flex-direction: row;
+
+}
+
+.product-container::-webkit-scrollbar{
+  display: none;
+}
+
+.product-card{
+  flex: 0 0 auto;
+  scale: .8;
+  margin-right: .1vw;
+}
+
+.product-image{
+  position: relative;
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+}
+
+.product-thumb1{
+  width: 95%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.product-thumb{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+.card-btn{
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1%;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  font-weight: bolder;
+  font-size: 140%;
+}
+
+.product-card:hover .card-btn{
+  opacity: 1;
+}
+
+.card-btn:hover{
+  background: #efefef;
+}
+
+.product-info{
+  width: 100%;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.product-brand{
+  text-transform: uppercase;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.price-main{
+  border: 0;
+  margin: 0;
+  text-align: center;
+  margin-left: 0%;
+  font-weight: 600;
+  font-size: 160%;
+  left: auto;
+  right: auto;
+}
+
+
+.link_main-shop {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: solid;
+  text-transform: uppercase;
+  font-size: xx-large;
+  margin-left: 44%;
+  margin-right: 44%;
+  width: 100%;
+  display:flex;
+}
+
+.new_album {
+  background-color: rgb(249, 235, 234);
+  padding: 1%;
+}
+
+.new_merch {
+  background-color: rgb(249, 235, 234);
+  padding: .8%;
+}
+
+
+
+
+
+.size-radio-btn{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #383838;
+  border-radius: 50%;
+  margin: 10px;
+  margin-left: 0;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #383838;
+  cursor: url(https://raw.githubusercontent.com/Lisiman/lisiman.github.io/6fa20ed1e50c83a346663ac6a59f3dbfd9301b31/resources/ZEN-Cursor4.svg), default !important;
+  background: #ffffff;
+}
+
+.size-radio-btn.check{
+  background: #383838;
+  color: #fff;
+}
+
+
+
+
+

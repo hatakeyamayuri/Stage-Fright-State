@@ -7,11 +7,13 @@
     font-size: calc(1vw + 1vh);
     padding-left: 220px;
     padding-bottom: 10px;
+    font-family: lato, sans-serif;
 }
   
 .BirthdayDay {
     font-size: calc(1vw + 1vh);
     padding-left: 220px;
+    font-family: lato, sans-serif;
 }
   
 .Herself {

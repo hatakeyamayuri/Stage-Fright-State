@@ -6,15 +6,22 @@
     line-height: 1;
 }
   
+.states {
+    font-size: xx-large;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
 .Dates {
     margin-top: 1%;
     text-align:center;
-    margin-bottom:80px;
+    margin-bottom:2%;
     line-height: 1;
     font-size: calc(6vw + 6vh);
     text-transform: uppercase;
     font-family: 'druk_cond_trialsuper', sans-serif;
-    letter-spacing: 20px;
 }
   
   
@@ -27,6 +34,7 @@
     border-collapse: collapse;
     font-size:20px;
     border-spacing:100px;
+    font-family: Lato, sans-serif;
 }
 
 td{

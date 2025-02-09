@@ -27,6 +27,7 @@ to {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
+    margin-bottom: 4%;
 }
 .init_box {
     width: 100%;
@@ -40,18 +41,16 @@ to {
 }
 .init_box_p {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    top: 0;
-    left: 0;
     pointer-events: none;
-    margin: 1rem;
+    margin: .5rem;
+    margin-top: -31rem;
     visibility: hidden;
     opacity: 0;
-
-    color: #ffffff;
-    font-size: 25rem;
-    line-height: 20rem;
+    color: rgb(255, 255, 255);
+    font-size: 15rem;
+    /*line-height: 19rem;*/
     font-family: 'druk_cond_trialsuper', sans-serif;
     text-transform: uppercase;
     transition: opacity .2s, visibility .1s;
@@ -62,7 +61,7 @@ to {
 }
 
 
-.myExitRight, .myConquer, .myButterflies {
+.myExitRight, .myConquer, .myButterflies, .myBeginnersLuck, .myHysteria , .myLostInTheCrowd {
     display: none;
     transition: 0.5s;
 }
@@ -125,4 +124,43 @@ to {
     font-size: 8rem;
     text-transform: uppercase;
     text-align: center;
+}
+
+.overlay_collection p {
+    font-family: Lato, sans-serif;
+}
+
+@media screen and (min-width: 1280px) and (max-width:1920px) {
+    .overlay_solid_grid > h3 {
+        font-size: 20rem;
+        margin-top: 0;
+        padding: 0;
+    }
+    .overlay_solid_grid > img {
+        margin-top: 20%;
+    }
+    .init_box_p {
+        font-size: 13.5rem;
+    }
+
+    .blword {
+        font-size: 13.1rem;
+        color: black;
+    }
+    .litcword {
+        font-size: 910%;
+        line-height: 11rem;
+    }
+
+    .overlay_solid_grid .blh3 {
+        font-size: 14rem;
+    }
+
+    .overlay_solid_grid .litch3 {
+        font-size: 14rem;
+        line-height: 15rem;
+    }
+    .overlay_solid_grid .litcimg {
+        margin-top: 10%;
+    }
 }

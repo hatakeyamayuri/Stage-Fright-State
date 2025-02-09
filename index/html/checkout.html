@@ -20,15 +20,13 @@
     
     <body>
         <header>
-            <nav id="mySidenav" class="sidenav">
-                <div id="nav-placeholder"></div>
-                <script>
-                    $(function(){
-                    $("#nav-placeholder").load("/index/html/nav.html");
-                    });
-                </script>
-                <span class="nav_open" onclick="openNav()">&#9776;</span>
-            </nav>    
+            <div id="nav-placeholder"></div>
+            <script>
+                $(function(){
+                $("#nav-placeholder").load("/index/html/nav.html");
+                });
+            </script>
+            <span class="nav_open" onclick="openNav()">&#9776;</span>  
         </header>
 
         <div class="loading-placeholder" id="loading-placeholder"></div>
@@ -71,10 +69,10 @@
                                 <h3>Payment</h3>
                                 <label for="fname">Accepted Cards</label>
                                 <div class="icon-container">
-                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
-                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
-                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                    <i class="fa-brands fa-cc-amex"></i>
+                                    <i class="fa-brands fa-cc-mastercard"></i>
+                                    <i class="fa-brands fa-cc-discover"></i>
                                 </div>
 
                                 <label for="cname">Name on Card</label>
@@ -110,8 +108,8 @@
                     <!--<form id="checkout_cart" method="POST" action="https://script.google.com/macros/s/AKfycbzFyhAkR4nHK01NjjTxMttnBuun96iKuB1PHlwAfDrhLaE4DWm4pDGyIKun8HF9n0k8/exec">-->
                         <div class="checkout_cart">
                             <ul id="cart" class="cart"></ul>
-                            <div class="price" id="total" name="total">Subtotal: $0</div>
-                            <div class="price" id="true_total" name="true_total">Total: $0</div>
+                            <div class="price" id="total" name="total">Subtotal: $0.00</div>
+                            <div class="price" id="true_total" name="true_total">Total: $0.00</div>
                         </div>
                     <!--</form>-->
                 </div>
@@ -133,5 +131,6 @@
         </script>
         
         <script src="/index/js/main.js"></script>
+        <script src="/index/js/test.js"></script>
     </body>
 </html>

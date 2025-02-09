@@ -1,0 +1,274 @@
+.main_back {
+    font-family: 'druk_cond_trialsuper', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 33vw;
+    padding: 0;
+    line-height: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 60px;
+    margin-bottom: 0%;
+    position: fixed;
+    top: 0;
+}
+.cover_up {
+    background-color: #ffffff;
+    overflow: clip;
+    position: relative;
+    z-index: 3;
+    padding-top: 25vw;
+    top: -70vh;
+    width: 100%;
+    height: 100%;
+    overflow-x: clip;
+    bottom: 500px;
+}
+
+.Group {
+    position: relative;
+    z-index: 5;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: auto;
+    justify-self: center;
+    margin-top: 30%;
+    border-radius: .5%;
+    box-shadow: 3px 3px 15px rgb(138, 138, 138);
+}
+.NameLogo {
+    display: block;
+    margin-left: auto;
+    left: 15px;
+    margin-right: auto;
+    justify-self: center;
+    width: 60%;
+    z-index: 6;
+    position: relative;
+    top: -10vw;
+    z-index: 5;
+}
+
+.subheading {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+    border: none;
+    text-transform: uppercase;
+    margin: 0;
+}
+.genre {
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 525;
+    margin: 0;
+}
+
+.shortcuts_int {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.shortcuts_int > a {
+    color: #000000;
+    text-decoration: none;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    font-size: x-large;
+    width: 22.89%;
+    text-align: center;
+    border-radius: .5rem;
+}
+.shortcuts_int a:hover {
+    background: linear-gradient(0deg,#e9a4c0, #dc6f88);
+    color:white;
+}
+
+/*Music Section*/
+.new_album > h4 {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.main_album {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 2%;
+    margin-left: 5%;
+}
+.main_album > img {
+    max-width: 50%;
+    height: 50%;
+}
+.main_album > a {
+    color: #000000;
+    margin-left: 1%;
+    font-family: 'druk_cond_trialsuper';
+    font-size: 35rem;
+    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-thickness: .5rem;
+    line-height: 28rem;
+    text-transform: uppercase;
+}
+
+/*Concert Section*/
+.upcoming_tour > a {
+    top: 2rem;
+    text-transform: uppercase;
+}
+.album_name {
+    font-family: 'druk_cond_trialsuper';
+    color: #000000;
+    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-thickness: .5rem;
+    font-size: 30rem;
+    line-height: 28rem;
+}
+.album_name:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: .5rem;
+}
+.upcoming_tour > h2 {
+    margin-bottom: 0;
+}
+.upcoming_tour > p {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 525;
+    text-transform: lowercase;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+/*Merch Section*/
+#new_merch{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.section-p1 {
+    display: grid;
+    width: 60%;
+    align-self: center;
+    grid-template-columns: 25%, 25%, 50%;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: 
+    "item_1 item_2 header"
+    "item_3 item_4 header";
+}
+#shop_header {
+    font-family: 'druk_cond_trialsuper', sans-serif;
+    text-decoration: none;
+    font-size: 36rem;
+    line-height: 27rem;
+    color: #000000;
+    height: 100%;
+    text-decoration-line: underline;
+    text-decoration-thickness: .5rem;
+}
+#shop-header-container {
+    grid-area: header;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#tourhoodie {
+    grid-area: item_1;
+}
+#exitrightsweat {
+    grid-area: item_2;
+}
+#exitrightvinyl {
+    grid-area: item_3;
+}
+#exitrightcd {
+    grid-area: item_4;
+}
+
+/*Contact Section*/
+.intro_contact {
+    margin-top: 2%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.contact-head {
+    font-family: 'druk_cond_trialsuper', sans-serif;
+    text-decoration: none;
+    font-size: 25rem;
+    line-height: 20rem;
+    color: #000000;
+    text-decoration-line: underline;
+    text-decoration-thickness: .5rem;
+    position: relative;
+    left: 0;
+}
+.RoundRound{
+    width: 20%;
+    height: 20%;
+    animation: rotation 30s infinite linear;
+}
+@keyframes rotation {
+from {
+    transform: rotate(359deg);
+}
+to {
+    transform: rotate(0deg);
+}}
+
+.contact-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+}
+.c-left {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: fit-content;
+}
+.break {
+    flex-basis: 100%;
+    height: 10%;
+}
+.contact-inputs{
+    outline: none;
+    padding-left: 4%;
+    color:#000000;
+    border: 1px solid #ccc;
+    font-family: Lato, sans-serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+.contact-inputs:focus{
+    border: 2px solid #6f3341;
+}
+.contact-inputs::placeholders{
+    color:#6f3341;
+}
+.c-left button{
+    font-family: Lato, sans-serif;
+    color:#ffffff;
+    background: linear-gradient(0deg,#e9a4c0, #dc6f88);
+    text-transform: uppercase;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#c-message {
+    width: 30%;
+    margin-left: 20%;
+}

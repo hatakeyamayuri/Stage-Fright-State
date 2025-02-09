@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Lato, sans-serif;
   height: 90%;
   margin: 0px;
   padding-bottom:4px;
@@ -15,6 +15,11 @@ Main {
 
 @font-face {
   font-family: 'druk_cond_trialsuper';
+  src: url('/Assets/Druk_Collection/Druk_Condensed_Family/DrukCond-Super-Trial.otf') format('woff2'),
+       url('/Assets/Druk_Collection/Druk_Condensed_Family/DrukCond-Super-Trial.otf') format('woff');
+}
+@font-face {
+  font-family: 'druk_super';
   src: url('/Assets/Druk_Collection/Druk_Condensed_Family/DrukCond-Super-Trial.otf') format('woff2'),
        url('/Assets/Druk_Collection/Druk_Condensed_Family/DrukCond-Super-Trial.otf') format('woff');
 }
@@ -237,6 +242,7 @@ h4{
   justify-self: center;
   margin-bottom: 1rem;
   color: rgb(0, 0, 0);
+  margin-top:4%;
 }
 .footer-placeholder {
   display: grid;
@@ -245,7 +251,7 @@ h4{
   margin-top: none;
   position: relative;
   width: 100%;
-  height: 240px;
+  height: 270px;
   padding-top:10px;
   background-color: #6f3341;
   z-index: 5;
@@ -608,3 +614,10 @@ hr {
   transition: transform .2s;
 }
 */
+
+
+@media screen and (min-width: 1280px) and (max-width:1920px){
+  .footer {
+    height: 210px;
+  }
+}

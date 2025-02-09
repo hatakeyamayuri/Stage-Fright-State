@@ -20,15 +20,13 @@
     
     <body>
         <header>
-            <nav id="mySidenav" class="sidenav">
-                <div id="nav-placeholder"></div>
-                <script>
-                    $(function(){
-                    $("#nav-placeholder").load("/index/html/nav.html");
-                    });
-                </script>
-                <span class="nav_open" onclick="openNav()">&#9776;</span>
-            </nav>    
+            <div id="nav-placeholder"></div>
+            <script>
+                $(function(){
+                $("#nav-placeholder").load("/index/html/nav.html");
+                });
+            </script>
+            <span class="nav_open" onclick="openNav()">&#9776;</span>
         </header>
 
         <div class="loading-placeholder" id="loading-placeholder"></div>
@@ -51,13 +49,29 @@
             </div>
 
             <div class = "init_box" onclick="openConquer()">
-                <img class="init_box_img" alt="Conquer" src="/Assets/Pictures/Conquer.png"> 
-                <p class="init_box_p">Con<br>quer</p>
+                <img class="init_box_img" alt="Conquer" src="/Assets/Pictures/conquer_art.png"> 
+                <p class="init_box_p">Conq<br>uer</p>
             </div>
 
             <div class = "init_box" onclick="openButterflies()">
-                <img class="init_box_img" alt="Butterflies" src="/Assets/Pictures/Butterflies.png">
+                <img class="init_box_img" alt="Butterflies" src="/Assets/Pictures/butterflies_art.png">
                 <p class="init_box_p">Butte<br>rflies</p>
+            </div>
+        </div>
+        <div class = "MusicFlex">
+            <div class = "init_box" onclick="openBeginnersLuck()">
+                <img class="init_box_img" alt="Beginners Luck" src="/Assets/Pictures/beginnersluck_art.png"> 
+                <p class="init_box_p blword">Beginner<br>s Luck</p>
+            </div>
+
+            <div class = "init_box" onclick="openHysteria()">
+                <img class="init_box_img" alt="Hysteria" src="/Assets/Pictures/hysteria_art.png"> 
+                <p class="init_box_p">Hyst<br>eria</p>
+            </div>
+
+            <div class = "init_box" onclick="openLostInTheCrowd()">
+                <img class="init_box_img" alt="Lost in the Crowd" src="/Assets/Pictures/lostinthecrowd_art.png">
+                <p class="init_box_p litcword">Lost in<br>the Crowd</p>
             </div>
         </div>
 
@@ -90,7 +104,37 @@
                     <p class ="Songs">•  Butterflies •</p>
                     <a href="/index/html/shop.html#Butterflies" class="link_overlay">Buy</a>
                 </div>
-            </div> 
+            </div>
+            
+            <div id="myBeginnersLuck" class="myBeginnersLuck">
+                <div class="overlay_trans_box" id="overlay_trans_box" onclick="closeBeginnersLuck()"></div>
+                <div class="overlay_solid_grid" id="overlay_BeginnersLuck">
+                    <h3 class="blh3">Beginner<br>s Luck</h3>
+                    <img src="/Assets/Pictures/BeginnersLuck.png" class="blimg">
+                    <p class ="Songs">• First Try Lucky • Leap Of Faith • New Start • Superstition • Unexpected • Lucky Roll • Gambler • Spin The Dice • Take A Risk • Place Your Cards Down • Second Try(Not So Lucky) •</p>
+                    <a href="/index/html/shop2.html#BeginnersLuck" class="link_overlay">Buy</a>
+                </div>
+            </div>
+
+            <div id="myHysteria" class="myHysteria">
+                <div class="overlay_trans_box" id="overlay_trans_box" onclick="closeHysteria()"></div>
+                <div class="overlay_solid_grid" id="overlay_Hysteria">
+                    <h3>Hyst<br>eria</h3>
+                    <img src="/Assets/Pictures/Hysteria.png">
+                    <p class ="Songs">•  Hysteria •</p>
+                    <a href="/index/html/shop2.html#Hysteria" class="link_overlay">Buy</a>
+                </div>
+            </div>
+
+            <div id="myLostInTheCrowd" class="myLostInTheCrowd">
+                <div class="overlay_trans_box" id="overlay_trans_box" onclick="closeLostInTheCrowd()"></div>
+                <div class="overlay_solid_grid" id="overlay_LostInTheCrowd">
+                    <h3 class="litch3">Lost In<br>The Crowd</h3>
+                    <img src="/Assets/Pictures/LostInTheCrowd.png" class="litcimg">
+                    <p class ="Songs">• Interlude • Hazy • Wander • One Of The Many • Faceless Faces • Left Or Right? • Wayward • In The Background • Lost In The Deck • Overlooked • Alone •</p>
+                    <a href="/index/html/shop2.html#LostInTheCrowd" class="link_overlay">Buy</a>
+                </div>
+            </div>
         </div>
 
         <div class="footer-placeholder" id="footer-placeholder"></div>
