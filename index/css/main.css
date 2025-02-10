@@ -35,6 +35,7 @@ h1 {
   font-family: 'druk_cond_trialsuper', sans-serif;
 }
 
+
 /*Header*/
 .FinaleName img {
   display: block;
@@ -212,10 +213,6 @@ h4{
   font-size: 55px;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-}
-
 .copyright1{
   color:#ffffff;
   display: none;
@@ -236,6 +233,7 @@ h4{
 }
 
 .copyright1 a:visited, a:active { text-decoration: none; }
+
 
 .arrow_up{
   display: flex;
@@ -287,6 +285,7 @@ h4{
   right:35px;
   z-index: 14;
 }
+
 
 .hero-image3 {
   height: 50%;
@@ -616,8 +615,14 @@ hr {
 */
 
 
-@media screen and (min-width: 1280px) and (max-width:1920px){
+@media screen and (min-width:1280px)and (max-width: 1900px){
   .footer {
     height: 210px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1366px) {
+  .footer{
+    height: 220px;
   }
 }

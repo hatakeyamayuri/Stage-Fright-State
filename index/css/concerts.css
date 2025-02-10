@@ -40,3 +40,9 @@ td {
 tr:nth-child(even) {background-color: #f5e7e0;}
 tr:hover {background-color: #ff1875;}
   
+
+@media screen and (min-width:1024px) and (max-width:1366px) {
+    .Dates{
+        font-size: 14rem;
+    }
+}

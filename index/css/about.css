@@ -632,7 +632,7 @@
             filter: grayscale(100%);
 }
 
-@media screen and (min-width: 1280px) and (max-width:1920px) {
+@media screen and (min-width:1280px)and (max-width: 1900px) {
     .tl-content p{
         font-size: 0.9rem;
     }

@@ -42,12 +42,12 @@ to {
     height: 100%;
     pointer-events: none;
     margin: .5rem;
-    margin-top: -28.5rem;
+    margin-top: -38rem;
     visibility: hidden;
     opacity: 0;
     color: rgb(255, 255, 255);
-    font-size: 18rem;
-    line-height: 14rem;
+    font-size: 23rem;
+    line-height: 18rem;
     font-family: 'druk_cond_trialsuper', sans-serif;
     text-transform: uppercase;
     transition: opacity .2s, visibility .1s;
@@ -150,39 +150,34 @@ to {
     font-family: Lato, sans-serif;
 }
 
-/*
-@media screen and (min-width: 1280px) and (max-width:1920px) {
+
+@media screen and (min-width:1280px)and (max-width: 1900px)  {
     .overlay_solid_grid > h3 {
-        font-size: 20rem;
-        margin-top: 0;
+        font-size: 21rem;
         padding: 0;
+        margin:0;
+        line-height: 25rem;
     }
     .overlay_solid_grid > img {
         margin-top: 20%;
     }
     .init_box_p {
-        font-size: 20rem;
-    }
-
-    .blword {
-        font-size: 13.1rem;
-        color: black;
-    }
-    .litcword {
-        font-size: 910%;
-        line-height: 11rem;
-    }
-
-    .overlay_solid_grid .blh3 {
-        font-size: 14rem;
-    }
-
-    .overlay_solid_grid .litch3 {
-        font-size: 14rem;
-        line-height: 15rem;
-    }
-    .overlay_solid_grid .litcimg {
-        margin-top: 10%;
+        margin-top: -29rem;
+        font-size: 15rem;
+        line-height: 14rem;
     }
 }
-*/
+
+@media screen and (min-width:770px) and (max-width:1024px) {
+    .overlay_solid_grid > h3{
+        font-size: 12rem;
+        line-height: 18rem;
+    }
+    
+}
+
+@media screen and (max-width:768px)  {
+    .MusicFlex{
+        flex:wrap;
+    }
+}

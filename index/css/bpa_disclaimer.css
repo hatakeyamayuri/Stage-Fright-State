@@ -62,12 +62,12 @@ padding-left:15px;
 }
 
 
-@media screen and (min-width: 1280px) and (max-width:1920px){
+@media screen and (min-width: 1280px) and (max-width:1900px){
   .WDT{
-    font-size:8rem;
+    font-size:9rem;
   }
 
   .DCo{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }

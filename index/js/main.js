@@ -140,7 +140,7 @@ const add_onshop = document.querySelectorAll('.add_onshop');
 const totalElement = document.getElementById('total'); 
 const totalElement_2 = document.getElementById('true_total'); 
 const selectedItems = {};
-var click_list = [0,0,0,0,0,0,0,0,  0,0,0,0,  0,0,0,0,  0,0,0,0,   0,0,0,0,  0,0,0,0,  0,0,0,0,  0,0,0,0,   0,0,0,0];
+var click_list = [0,0,0,0,0,0,0,0,  0,0,0,0,  0,0,0,0,  0,0,0,0];
 
 function handleCardClick(event) {
     const check = event.currentTarget;
@@ -245,76 +245,6 @@ function restore() {
             for (let step = 0; step < perm_list[19]; step++) {
                 document.getElementById('BHoodie').click();
             }
-
-
-            for (let step = 0; step < perm_list[20]; step++) {
-                document.getElementById('BLVinyl').click();
-            }
-            for (let step = 0; step < perm_list[21]; step++) {
-                document.getElementById('BLCD').click();
-            }
-            for (let step = 0; step < perm_list[22]; step++) {
-                document.getElementById('BLSweat').click();
-            }
-            for (let step = 0; step < perm_list[23]; step++) {
-                document.getElementById('BLHoodie').click();
-            }
-
-
-            for (let step = 0; step < perm_list[24]; step++) {
-                document.getElementById('HVinyl').click();
-            }
-            for (let step = 0; step < perm_list[25]; step++) {
-                document.getElementById('HCD').click();
-            }
-            for (let step = 0; step < perm_list[26]; step++) {
-                document.getElementById('HSweat').click();
-            }
-            for (let step = 0; step < perm_list[27]; step++) {
-                document.getElementById('HSweat').click();
-            }
-
-
-            for (let step = 0; step < perm_list[28]; step++) {
-                document.getElementById('LitCVinyl').click();
-            }
-            for (let step = 0; step < perm_list[29]; step++) {
-                document.getElementById('LitCCD').click();
-            }
-            for (let step = 0; step < perm_list[30]; step++) {
-                document.getElementById('LitCSweat').click();
-            }
-            for (let step = 0; step < perm_list[31]; step++) {
-                document.getElementById('LitCSweat').click();
-            }
-
-
-            for (let step = 0; step < perm_list[32]; step++) {
-                document.getElementById('DPVinyl').click();
-            }
-            for (let step = 0; step < perm_list[33]; step++) {
-                document.getElementById('DPCD').click();
-            }
-            for (let step = 0; step < perm_list[34]; step++) {
-                document.getElementById('DPSweat').click();
-            }
-            for (let step = 0; step < perm_list[35]; step++) {
-                document.getElementById('DPSweat').click();
-            }
-
-
-            for (let step = 0; step < perm_list[36]; step++) {
-                document.getElementById('SVinyl').click();
-            }
-            for (let step = 0; step < perm_list[37]; step++) {
-                document.getElementById('SCD').click();
-            }
-            for (let step = 0; step < perm_list[38]; step++) {
-                document.getElementById('SSweat').click();
-            }
-            for (let step = 0; step < perm_list[39]; step++) {
-                document.getElementById('SSweat').click();
-            }
         }
 
         if (localStorage.total === "undefined") {
@@ -343,7 +273,6 @@ function restore() {
                 clearCart()
             })
         });
-
             if ((click_list[6] != null) && (click_list[6] > 0)) {
                 let product_sold = document.createElement('p');
                 product_sold.setAttribute("id", ("append_id_" + 6))
@@ -603,276 +532,6 @@ function restore() {
                 document.getElementById("append_id_19").appendChild(product_price);
                 document.getElementById("append_id_19").appendChild(product_num);
             }
-
-
-
-            
-            if ((click_list[20] != null) && (click_list[20] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 20))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Beginners Luck Vinyl: ";
-                product_price.textContent = "$24.00 - "
-                product_num.textContent = click_list[20]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_20").appendChild(product_price);
-                document.getElementById("append_id_20").appendChild(product_num);
-            } 
-
-            if ((click_list[21] != null) && (click_list[21] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 21))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Beginners Luck CD: ";
-                product_price.textContent = "$20.00 - "
-                product_num.textContent = click_list[21]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_21").appendChild(product_price);
-                document.getElementById("append_id_21").appendChild(product_num);
-            } 
-
-            if ((click_list[22] != null) && (click_list[22] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 22))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Beginners Luck Sweatshirt: ";
-                product_price.textContent = "$43.00 - "
-                product_num.textContent = click_list[22]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_22").appendChild(product_price);
-                document.getElementById("append_id_22").appendChild(product_num);
-            } 
-            if ((click_list[23] != null) && (click_list[23] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 23))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Beginners Luck Hoodie: ";
-                product_price.textContent = "$46.00 - "
-                product_num.textContent = click_list[23]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_23").appendChild(product_price);
-                document.getElementById("append_id_23").appendChild(product_num);
-            }
-
-
-
-            
-            if ((click_list[24] != null) && (click_list[24] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 24))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Hysteria Vinyl: ";
-                product_price.textContent = "$18.00 - "
-                product_num.textContent = click_list[24]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_24").appendChild(product_price);
-                document.getElementById("append_id_24").appendChild(product_num);
-            } 
-
-            if ((click_list[25] != null) && (click_list[25] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 25))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Hysteria CD: ";
-                product_price.textContent = "$12.00 - "
-                product_num.textContent = click_list[25]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_25").appendChild(product_price);
-                document.getElementById("append_id_25").appendChild(product_num);
-            } 
-
-            if ((click_list[26] != null) && (click_list[26] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 26))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Hysteria Sweatshirt: ";
-                product_price.textContent = "$43.00 - "
-                product_num.textContent = click_list[26]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_26").appendChild(product_price);
-                document.getElementById("append_id_26").appendChild(product_num);
-            } 
-            if ((click_list[27] != null) && (click_list[27] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 27))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Hysteria Hoodie: ";
-                product_price.textContent = "$46.00 - "
-                product_num.textContent = click_list[27]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_27").appendChild(product_price);
-                document.getElementById("append_id_27").appendChild(product_num);
-            }
-
-
-
-            
-            if ((click_list[28] != null) && (click_list[28] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 28))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Lost In The Crowd Vinyl: ";
-                product_price.textContent = "$24.00 - "
-                product_num.textContent = click_list[28]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_28").appendChild(product_price);
-                document.getElementById("append_id_28").appendChild(product_num);
-            } 
-
-            if ((click_list[29] != null) && (click_list[29] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 29))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Lost In The Crowd CD: ";
-                product_price.textContent = "$20.00 - "
-                product_num.textContent = click_list[29]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_29").appendChild(product_price);
-                document.getElementById("append_id_29").appendChild(product_num);
-            } 
-
-            if ((click_list[30] != null) && (click_list[30] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 30))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Lost In The Crowd Sweatshirt: ";
-                product_price.textContent = "$43.00 - "
-                product_num.textContent = click_list[30]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_30").appendChild(product_price);
-                document.getElementById("append_id_30").appendChild(product_num);
-            } 
-            if ((click_list[31] != null) && (click_list[31] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 31))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Lost In The Crowd Hoodie: ";
-                product_price.textContent = "$46.00 - "
-                product_num.textContent = click_list[31]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_31").appendChild(product_price);
-                document.getElementById("append_id_31").appendChild(product_num);
-            }
-
-
-
-            
-            if ((click_list[32] != null) && (click_list[32] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 32))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Dear Phobos Vinyl: ";
-                product_price.textContent = "$18.00 - "
-                product_num.textContent = click_list[32]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_32").appendChild(product_price);
-                document.getElementById("append_id_32").appendChild(product_num);
-            } 
-
-            if ((click_list[33] != null) && (click_list[33] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 33))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Dear Phobos CD: ";
-                product_price.textContent = "$12.00 - "
-                product_num.textContent = click_list[33]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_33").appendChild(product_price);
-                document.getElementById("append_id_33").appendChild(product_num);
-            } 
-
-            if ((click_list[34] != null) && (click_list[34] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 34))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Dear Phobos Sweatshirt: ";
-                product_price.textContent = "$43.00 - "
-                product_num.textContent = click_list[34]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_34").appendChild(product_price);
-                document.getElementById("append_id_34").appendChild(product_num);
-            } 
-            if ((click_list[35] != null) && (click_list[35] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 35))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Dear Phobos Hoodie: ";
-                product_price.textContent = "$46.00 - "
-                product_num.textContent = click_list[35]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_35").appendChild(product_price);
-                document.getElementById("append_id_35").appendChild(product_num);
-            }
-
-
-
-            
-            if ((click_list[36] != null) && (click_list[36] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 36))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Subdue Vinyl: ";
-                product_price.textContent = "$18.00 - "
-                product_num.textContent = click_list[36]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_36").appendChild(product_price);
-                document.getElementById("append_id_36").appendChild(product_num);
-            } 
-
-            if ((click_list[37] != null) && (click_list[37] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 37))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Subdue CD: ";
-                product_price.textContent = "$12.00 - "
-                product_num.textContent = click_list[37]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_37").appendChild(product_price);
-                document.getElementById("append_id_37").appendChild(product_num);
-            } 
-
-            if ((click_list[38] != null) && (click_list[38] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 38))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Subdue Sweatshirt: ";
-                product_price.textContent = "$43.00 - "
-                product_num.textContent = click_list[38]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_38").appendChild(product_price);
-                document.getElementById("append_id_38").appendChild(product_num);
-            } 
-            if ((click_list[39] != null) && (click_list[39] > 0)) {
-                let product_sold = document.createElement('p');
-                product_sold.setAttribute("id", ("append_id_" + 39))
-                let product_price = document.createElement('span');
-                let product_num = document.createElement('span');
-                product_sold.textContent = "Subdue Hoodie: ";
-                product_price.textContent = "$46.00 - "
-                product_num.textContent = click_list[39]
-                document.getElementById("cart").appendChild(product_sold);
-                document.getElementById("append_id_39").appendChild(product_price);
-                document.getElementById("append_id_39").appendChild(product_num);
-            }
         if (localStorage.total === "undefined") {
             totalElement.textContent = "Subtotal: $0.00";
             totalElement_2.textContent = "Total: $0.00";
@@ -902,9 +561,12 @@ function updateCart() {
     for (const itemId in selectedItems) {
         const item = selectedItems[itemId];
         const listItem = document.createElement('li');
+        const para_cont = document.createElement('p');
         const quantityContainer = document.createElement('div'); 
         const quantityText = document.createElement('span'); 
         quantityText.setAttribute("id", "num_need_" + itemId); 
+        quantityText.setAttribute("class", "quantity_text"); 
+        para_cont.setAttribute("class", "para_cont")
         const addButton = document.createElement('button');
         addButton.setAttribute("class", "add_sub")
         const subtractButton = document.createElement('button');
@@ -931,7 +593,8 @@ function updateCart() {
         quantityContainer.appendChild(addButton); 
         quantityContainer.appendChild(hr); 
 
-        listItem.textContent = `${item.name} - $${item.price}`;
+        para_cont.textContent = `${item.name} - $${item.price}`;
+        listItem.appendChild(para_cont); 
         listItem.appendChild(quantityContainer); 
         cart.appendChild(listItem);
 

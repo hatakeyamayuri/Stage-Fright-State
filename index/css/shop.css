@@ -25,14 +25,12 @@ h1 {
     background: linear-gradient(0deg,#e9a4c0, #dc6f88);
     color:white;
 }
-  
-  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
     .List a {
       float: none;
       display: block;
       width: 100%;
-      text-align: left; /* If you want the text to be left-aligned on small screens */
+      text-align: left;
     }
 }
 
@@ -160,7 +158,6 @@ main {
   }
 }
 
-
 .shopping_cart {
   width: 0%;
   display: none;
@@ -170,7 +167,18 @@ main {
   position: fixed; 
   bottom: 5%;
   right: 2%;
-  z-index: 4;
+  z-index: 10;
+}
+
+.para_cont {
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 1%;
+  font-size: 1.2rem;
+}
+.quantity_text {
+  font-family: Helvetica, sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .full_trans {
@@ -212,6 +220,8 @@ main {
   width:0;
 }
 
+
+
 .checkout_pre_h{
   margin-top: 10%;
   text-transform: uppercase; 
@@ -231,11 +241,20 @@ main {
   font-size: 1.1rem;
   margin-bottom: 5%;
 }
+#total {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+}
 .to_bottom button {
   width: 94%;
   padding: 2%;
   border-radius: 1rem;
   margin-bottom: 3%;
+}
+.add_sub button{
+  font-size: 200%;
+  margin-left: 1%;
+  cursor:pointer;
 }
 .ClearingCart button{
   font-weight:bold;
@@ -383,38 +402,6 @@ body.showCart .container {
   width:0;
 }
 
-
-
-
-
-/*Pagination*/
-.center {
-  text-align: center;
-}
-
-.pagination {
-  display: inline-block;
-}
-
-.pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.pagination a.active {
-  background-color: #ff1875;
-  color: white;
-  border-radius: 5px;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: #ddd;
-  border-radius: 5px;
-}
-
-.pagination a:hover:not(.active) {background-color: #ddd;}
 
 @media screen and (min-width: 1280px) and (max-width:1920px){
   ._Bongo{
