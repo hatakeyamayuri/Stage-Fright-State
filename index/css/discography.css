@@ -152,7 +152,7 @@ to {
         font-size: 21rem;
         padding: 0;
         margin:0;
-        line-height: 25rem;
+        line-height: 20rem;
     }
     .overlay_solid_grid > img {
         margin-top: 20%;
@@ -176,7 +176,6 @@ to {
         font-size: 12rem;
         line-height: 18rem;
     }
-    
 }
 
 @media screen and (max-width:768px)  {

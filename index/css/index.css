@@ -200,6 +200,10 @@
     column-gap: 5%;
     justify-content: center;
 }
+.des {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 #shop_header {
     font-family: 'druk_cond_trialsuper', sans-serif;
     text-decoration: none;
