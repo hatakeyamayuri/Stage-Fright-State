@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: Lato, sans-serif;
+  font-family: Helvetica, sans-serif;
   height: 90%;
   margin: 0px;
   padding-bottom:4px;
@@ -27,10 +27,10 @@ Main {
 h1 {
   color: #000000;
   text-align: center;
-  margin-top: none;
+  margin-top: 4%;
   line-height: 1.4;
-  margin-bottom: none;
-  font-size: calc(6vw + 6vh);
+  margin-bottom: 0;
+  font-size: 20rem;
   text-transform: uppercase;
   font-family: 'druk_cond_trialsuper', sans-serif;
 }
@@ -86,7 +86,7 @@ div.sticky {
 }
 
   p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 20px;
   }
 

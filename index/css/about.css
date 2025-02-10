@@ -24,12 +24,10 @@
 }
 
 .String {
-    font-size: 400%;
+    font-size: 2rem;
     text-align: center;
     margin-top:5px;
     margin-bottom:10px;
-    font-family: 'druk_cond_trialsuper', sans-serif;
-    word-spacing: 5px;
 }
 
 .ron {
@@ -501,6 +499,8 @@
 
 .TL a{
   color: black;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 #timeline {

@@ -6,9 +6,6 @@
     min-width: 0;
     min-height: 0;
 }
-h1.hero-header {
-    text-align: center;
-}
 .disco_rotateImage {
     animation: rotation 30s infinite linear;
     width:10%;
@@ -45,12 +42,12 @@ to {
     height: 100%;
     pointer-events: none;
     margin: .5rem;
-    margin-top: -31rem;
+    margin-top: -28.5rem;
     visibility: hidden;
     opacity: 0;
     color: rgb(255, 255, 255);
-    font-size: 15rem;
-    /*line-height: 19rem;*/
+    font-size: 18rem;
+    line-height: 14rem;
     font-family: 'druk_cond_trialsuper', sans-serif;
     text-transform: uppercase;
     transition: opacity .2s, visibility .1s;
@@ -59,9 +56,32 @@ to {
     visibility: visible;
     opacity: 1;
 }
+.init_box_img2 {
+    width: 100%;
+}
+.init_box_p2 {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    margin: .5rem;
+    margin-top: -28.5rem;
+    visibility: hidden;
+    opacity: 0;
+    color: rgb(0, 0, 0);
+    font-size: 18rem;
+    line-height: 14rem;
+    font-family: 'druk_cond_trialsuper', sans-serif;
+    text-transform: uppercase;
+    transition: opacity .2s, visibility .1s;
+}
+.init_box_img2:hover ~ .init_box_p2{
+    visibility: visible;
+    opacity: 1;
+}
 
 
-.myExitRight, .myConquer, .myButterflies, .myBeginnersLuck, .myHysteria , .myLostInTheCrowd {
+.myExitRight, .myConquer, .myButterflies, .myBeginnersLuck, .myHysteria , .myLostInTheCrowd, .myDearPhobos .mySubdue {
     display: none;
     transition: 0.5s;
 }
@@ -130,6 +150,7 @@ to {
     font-family: Lato, sans-serif;
 }
 
+/*
 @media screen and (min-width: 1280px) and (max-width:1920px) {
     .overlay_solid_grid > h3 {
         font-size: 20rem;
@@ -140,7 +161,7 @@ to {
         margin-top: 20%;
     }
     .init_box_p {
-        font-size: 13.5rem;
+        font-size: 20rem;
     }
 
     .blword {
@@ -164,3 +185,4 @@ to {
         margin-top: 10%;
     }
 }
+*/

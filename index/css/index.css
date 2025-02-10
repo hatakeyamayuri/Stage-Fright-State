@@ -20,7 +20,7 @@
     position: relative;
     z-index: 3;
     padding-top: 25vw;
-    top: -70vh;
+    top: -30%;
     width: 100%;
     height: 100%;
     overflow-x: clip;
@@ -72,6 +72,8 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .shortcuts_int > a {
     color: #000000;
@@ -94,7 +96,7 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 4rem;
-    margin: 0;
+    margin: 1%;
 }
 
 .main_album {
@@ -111,18 +113,28 @@
     color: #000000;
     margin-left: 1%;
     font-family: 'druk_cond_trialsuper';
-    font-size: 35rem;
+    font-size: 30rem;
     text-decoration: none;
     text-decoration-line: underline;
     text-decoration-thickness: .5rem;
     line-height: 28rem;
     text-transform: uppercase;
+    align-self: center;
 }
 
 /*Concert Section*/
-.upcoming_tour > a {
-    top: 2rem;
+.upcoming_tour > h2 {
     text-transform: uppercase;
+}
+@media screen and (min-width: 1280px) and (max-width:1920px) {
+    .main_album > a {
+        font-size: 23rem;
+        line-height: 20rem;
+    }
+    .album_name {
+        font-size: 25rem;
+        line-height: 23rem;
+    }
 }
 .album_name {
     font-family: 'druk_cond_trialsuper';
@@ -130,15 +142,20 @@
     text-decoration: none;
     text-decoration-line: underline;
     text-decoration-thickness: .5rem;
-    font-size: 30rem;
+    font-size: 23rem;
     line-height: 28rem;
 }
 .album_name:hover {
     text-decoration-line: underline;
     text-decoration-thickness: .5rem;
 }
+.upcoming_tour > a {
+    margin-top: 1%;
+}
 .upcoming_tour > h2 {
-    margin-bottom: 0;
+    margin-bottom: -3%;
+    max-height: fit-content;
+    margin-top: -4%;
 }
 .upcoming_tour > p {
     width: 100%;
@@ -167,12 +184,14 @@
     grid-template-areas: 
     "item_1 item_2 header"
     "item_3 item_4 header";
+    column-gap: 5%;
+    justify-content: center;
 }
 #shop_header {
     font-family: 'druk_cond_trialsuper', sans-serif;
     text-decoration: none;
-    font-size: 36rem;
-    line-height: 27rem;
+    font-size: 38rem;
+    line-height: 32rem;
     color: #000000;
     height: 100%;
     text-decoration-line: underline;
@@ -203,6 +222,11 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    height: calc(fit-content - 2rem);
+    margin-bottom: 2%;
+}
+.intro_contact > h2 {
+    margin: 0;
 }
 .contact-head {
     font-family: 'druk_cond_trialsuper', sans-serif;
@@ -218,6 +242,7 @@
 .RoundRound{
     width: 20%;
     height: 20%;
+    align-self: center;
     animation: rotation 30s infinite linear;
 }
 @keyframes rotation {
@@ -240,6 +265,7 @@ to {
     height: fit-content;
     width: fit-content;
     max-height: 50%;
+    margin-left: 5%;
 }
 .break {
     flex-basis: 100%;
@@ -250,7 +276,7 @@ to {
     padding: 1rem;
     color:#000000;
     border: 1px solid #ccc;
-    font-family: Lato, sans-serif;
+    font-family: Helvetica, sans-serif;
     margin-bottom: 5%;
     width: 100%;
 }
@@ -261,12 +287,15 @@ to {
     color:#6f3341;
 }
 .c-left button{
-    font-family: Lato, sans-serif;
+    font-family: Helvetica, sans-serif;
     color:#ffffff;
     background: linear-gradient(0deg,#e9a4c0, #dc6f88);
     text-transform: uppercase;
     margin-top: 3%;
     margin-bottom: 3%;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 #c-message {
     width: 40%;
@@ -275,15 +304,4 @@ to {
     margin-bottom: 0;
     padding: 1rem;
     resize: none;
-}
-
-@media screen and (min-width: 1280px) and (max-width:1920px) {
-    .main_album > a {
-        font-size: 25rem;
-        line-height: 20rem;
-    }
-    .album_name {
-        font-size: 25rem;
-        line-height: 23rem;
-    }
 }
