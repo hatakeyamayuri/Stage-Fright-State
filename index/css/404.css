@@ -6,11 +6,9 @@ p {
     align-content: center;
     white-space: pre 
 }
-
-a{
+a {
     color: black;
 }
-
 .center_p {
     display: grid;
     width: 100%;

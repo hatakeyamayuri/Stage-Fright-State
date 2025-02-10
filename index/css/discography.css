@@ -80,7 +80,6 @@ to {
     opacity: 1;
 }
 
-
 .myExitRight, .myConquer, .myButterflies, .myBeginnersLuck, .myHysteria , .myLostInTheCrowd, .myDearPhobos .mySubdue {
     display: none;
     transition: 0.5s;
@@ -118,7 +117,6 @@ to {
     "header album_cover album_cover"
     "songs songs buy_link";
 }
-
 .overlay_solid_grid > h3 {
     grid-area: header;
     font-family: 'druk_cond_trialsuper', sans-serif;
@@ -145,11 +143,9 @@ to {
     text-transform: uppercase;
     text-align: center;
 }
-
 .overlay_collection p {
     font-family: Lato, sans-serif;
 }
-
 
 @media screen and (min-width:1280px)and (max-width: 1900px)  {
     .overlay_solid_grid > h3 {
@@ -166,6 +162,13 @@ to {
         font-size: 15rem;
         line-height: 14rem;
     }
+    .hero-header h1{
+        font-size: 17rem;
+    }
+    .disco_rotateImage {
+        width: 16%;
+        margin-top: 3.5%;
+    }   
 }
 
 @media screen and (min-width:770px) and (max-width:1024px) {

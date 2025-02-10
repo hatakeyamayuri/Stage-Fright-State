@@ -90,7 +90,6 @@
     color:white;
 }
 
-/*Music Section*/
 .new_album > h4 {
     width: 100%;
     text-align: center;
@@ -98,7 +97,6 @@
     font-size: 4rem;
     margin: 1%;
 }
-
 .main_album {
     display: flex;
     flex-wrap: nowrap;
@@ -122,11 +120,10 @@
     align-self: center;
 }
 
-/*Concert Section*/
 .upcoming_tour > h2 {
     text-transform: uppercase;
 }
-@media screen and (min-width: 1280px) and (max-width:1920px) {
+@media screen and (min-width: 1280px) and (max-width:1900px) {
     .main_album > a {
         font-size: 23rem;
         line-height: 20rem;
@@ -136,6 +133,23 @@
         line-height: 23rem;
     }
 }
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    .main_back{
+        font-size:28vw;
+    }
+    .main_album > a {
+        font-size: 15rem;
+        line-height: 12rem;
+    }
+    .album_name{
+        font-size: 17rem;
+    }
+    #shop_header {
+        font-size: 35rem;
+        line-height: 32rem;
+    }
+}
+
 .album_name {
     font-family: 'druk_cond_trialsuper';
     color: #000000;
@@ -168,7 +182,6 @@
     margin-bottom: 4rem;
 }
 
-/*Merch Section*/
 #new_merch{
     display: flex;
     width: 100%;
@@ -216,7 +229,6 @@
     grid-area: item_4;
 }
 
-/*Contact Section*/
 .intro_contact {
     margin-top: 2%;
     display: flex;

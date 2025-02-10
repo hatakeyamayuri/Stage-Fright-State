@@ -28,7 +28,6 @@
                     });
                 </script>
             <span class="nav_open" onclick="openNav()">&#9776;</span>
-
         </header>
 
         <div class="loading-placeholder" id="loading-placeholder"></div>
@@ -58,33 +57,29 @@
             </span>
         </div>
          
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="/Assets/icons_shop/ButterfliesVinyl.png" width="100%" id="MainImg" alt="Butterflies Vinyl Case">
 
-            <section id="prodetails" class="section-p1">
-                <div class="single-pro-image">
-                    <img src="/Assets/icons_shop/ButterfliesVinyl.png" width="100%" id="MainImg" alt="Butterflies Vinyl Case">
-
-                    <div class="small-img-group">
-                        <div class="small-img-col">
-                            <img src="/Assets/icons_shop/ButterfliesVinyl.png" width="100%" class="small-img" alt="Butterflies Vinyl Case">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="/Assets/Store/Butterflies Disc.png" width="100%" class="small-img" alt="Butterflies Vinyl">
-                        </div>
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="/Assets/icons_shop/ButterfliesVinyl.png" width="100%" class="small-img" alt="Butterflies Vinyl Case">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/Assets/Store/Butterflies Disc.png" width="100%" class="small-img" alt="Butterflies Vinyl">
                     </div>
                 </div>
+            </div>
 
-                <div class="cart" id="BVinyl_0" name="2">
-                    <h6 class ="returnshop" onclick="window.location.href='/index/html/shop.html';">Shop / Butterfly Vinyl</h6>
-                    <h4>Butterfly Vinyl</h4>
-                    <p style="text-align:left;margin-top:0;margin-bottom:0;">$<span class="price">18.00</span></p>
-                    <input type="number" value="1" min="0">
-                    <button id="BVinyl" class="add_onshop">Add To Cart</button>
-                </div>
-            </section>
+            <div class="cart" id="BVinyl_0" name="2">
+                <h6 class ="returnshop" onclick="window.location.href='/index/html/shop.html';">Shop / Butterfly Vinyl</h6>
+                <h4>Butterfly Vinyl</h4>
+                <p style="text-align:left;margin-top:0;margin-bottom:0;">$<span class="price">18.00</span></p>
+                <input type="number" value="1" min="0">
+                <button id="BVinyl" class="add_onshop">Add To Cart</button>
+            </div>
+        </section>
 
-
-        
-        
         <div class="footer-placeholder" id="footer-placeholder"></div>
         <script>
             $(function(){
@@ -100,25 +95,23 @@
         </script>
         
         <script>
-                var MainImg = document.getElementById("MainImg");
-                var smallimg = document.getElementsByClassName("small-img");
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
 
-                smallimg[0].onclick = function(){
-                    MainImg.src = smallimg[0].src;
-                }
-                smallimg[1].onclick = function(){
-                    MainImg.src = smallimg[1].src;
-                }
-                smallimg[2].onclick = function(){
-                    MainImg.src = smallimg[2].src;
-                }
-                smallimg[3].onclick = function(){
-                    MainImg.src = smallimg[3].src;
-                }
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                MainImg.src = smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                MainImg.src = smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                MainImg.src = smallimg[3].src;
+            }
         </script>
 
-
         <script src="/index/js/main.js"></script>
-        <script src="/index/js/shop_items.js"></script>
     </body>
 </html>
