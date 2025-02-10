@@ -10,6 +10,7 @@
     animation: rotation 30s infinite linear;
     width:10%;
     align-self: center;
+    margin-top: 3.5%;
 }
 @keyframes rotation {
 from {
